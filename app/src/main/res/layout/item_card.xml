@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener"/>
+
+        <import type="android.graphics.Color"/>
+
+        <variable
+            name="category"
+            type="com.bcp.androidchallenge.ui.adapter.model.Card" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="@dimen/element_corner_radius"
+        app:cardElevation="@dimen/element_elevation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.30"></androidx.constraintlayout.widget.Guideline>
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.85"></androidx.constraintlayout.widget.Guideline>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:paddingStart="16dp"
+                app:layout_constraintTop_toTopOf="@id/textCardNumber"
+                app:layout_constraintBottom_toBottomOf="@id/textCardExpires"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guidelineOne"
+                android:layout_marginEnd="12dp"
+                app:loadImage="@{category.flag}"></ImageView>
+
+            <TextView
+                android:id="@+id/textCardNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/textCardExpires"
+                app:layout_constraintStart_toStartOf="@id/guidelineOne"
+                app:layout_constraintEnd_toEndOf="@id/guidelineTwo"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:text="@{category.title}"
+                style="@style/CardNumber"></TextView>
+            <TextView
+                android:id="@+id/textCardExpires"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/textCardNumber"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guidelineOne"
+                app:layout_constraintEnd_toEndOf="@id/guidelineTwo"
+                android:text="@{category.sub_title}"
+                style="@style/CardExpires"></TextView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

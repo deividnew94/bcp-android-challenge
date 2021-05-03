@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">BCP App</string>
+    <string name="search_no_results">Not found</string>
+    <string name="search_discount">Tú envías:</string>
+    <string name="search_receive">Tú recibes:</string>
+    <string name="search_count">0.0</string>
+    <string name="action_filtersDol">Dólares</string>
+    <string name="action_filtersSol">Soles</string>
+    <string name="action_filtersEur">Euros</string>
+    <string name="login_desc">Compra: %1$s | Venta: %2$s</string>
+    <string name="action_init">Empieza tu operación</string>
+    <string name="cards_without_card_title">No tienes ninguna tarjeta</string>
+    <string name="action_add_card">agregar tarjeta</string>
+
+    <string name="card_european">European Union</string>
+    <string name="card_eeuu">United States</string>
+    <string name="card_japan">Japan</string>
+    <string name="card_uk">United Kingdom</string>
+    <string name="card_sw">Switzerland</string>
+    <string name="card_can">Canada</string>
+
+    <string name="currency_european">EUR</string>
+    <string name="currency_eeuu">USD</string>
+    <string name="currency_japan">JPY</string>
+    <string name="currency_uk">GBP</string>
+    <string name="currency_sw">CHF</string>
+    <string name="currency_can">CAD</string>
+    <string name="subtitle_desc">1 EUR = %1$s %2$s</string>
+</resources>
