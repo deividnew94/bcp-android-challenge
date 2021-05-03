@@ -1,0 +1,131 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/gray_100</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+
+    <style name="Search"></style>
+
+    <style name="Search.Container">
+        <item name="android:background">@drawable/bg_button</item>
+
+    </style>
+
+    <style name="Search.Icon">
+        <item name="tint">?colorPrimary</item>
+    </style>
+
+    <style name="Search.Input">
+        <item name="android:fontFamily">@font/sfui_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark_gray_700</item>
+        <item name="lineHeight">21dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Search.Input2">
+        <item name="android:fontFamily">@font/sfui_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="lineHeight">21dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ImageButtonFirst">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:fontFamily">@font/sfui_medium</item>
+        <item name="android:textSize">@dimen/text_image_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="lineHeight">@dimen/image_button_line_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_button_black_first</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:drawableTint">@color/white</item>
+    </style>
+    <style name="ImageButtonSecond">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:fontFamily">@font/sfui_medium</item>
+        <item name="android:textSize">@dimen/text_image_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="lineHeight">@dimen/image_button_line_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bg_button_black_second</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:drawableTint">@color/white</item>
+    </style>
+    <style name="Category"></style>
+
+    <style name="Category.Icon">
+        <item name="tint">@color/dark_gray_variant_700</item>
+    </style>
+
+    <style name="Category.Title">
+        <item name="android:fontFamily">@font/sfui_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/dark_gray_variant_700</item>
+        <item name="lineHeight">15dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:fontFamily">@font/sfui_bold</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/dark_gray_variant_700</item>
+        <item name="lineHeight">@dimen/title_line_height</item>
+    </style>
+    <style name="Button">
+        <item name="android:fontFamily">@font/bariol_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textAlignment">center</item>
+        <item name="lineHeight">@dimen/button_line_height</item>
+        <item name="android:background">@drawable/bg_button_end</item>
+        <item name="android:backgroundTint">@color/light_blue_600</item>
+        <item name="android:paddingStart">@dimen/button_padding_start</item>
+        <item name="android:paddingEnd">@dimen/button_padding_end</item>
+        <item name="android:drawableTint">@color/white</item>
+    </style>
+    <style name="Back">
+        <item name="android:src">@drawable/ic_baseline_arrow_back_ios</item>
+        <item name="tint">@color/dark_gray_variant_700</item>
+    </style>
+    <style name="AppBarTitle">
+        <item name="android:fontFamily">@font/sfui_bold</item>
+        <item name="android:textSize">@dimen/text_appbar</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="lineHeight">@dimen/appbar_line_height</item>
+    </style>
+    <style name="NoContent">
+        <item name="android:fontFamily">@font/bariol_bold</item>
+        <item name="android:textSize">@dimen/text_no_content</item>
+        <item name="android:textColor">@color/dark_gray_variant_700</item>
+        <item name="android:textAlignment">center</item>
+        <item name="lineHeight">@dimen/no_content_line_height</item>
+    </style>
+    <style name="CardNumber">
+        <item name="android:fontFamily">@font/sfui_medium</item>
+        <item name="android:textSize">@dimen/text_card_number</item>
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="lineHeight">@dimen/card_number_line_height</item>
+    </style>
+    <style name="CardExpires">
+        <item name="android:fontFamily">@font/sfui_regular</item>
+        <item name="android:textSize">@dimen/text_card_expires</item>
+        <item name="android:textColor">@color/gray_600</item>
+        <item name="lineHeight">@dimen/card_expires_line_height</item>
+    </style>
+</resources>

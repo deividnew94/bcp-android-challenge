@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GozzaloApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/gray_100</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorSecondaryVariant">@color/purple_900</item>
+        <item name="colorOnSecondary">@color/light_blue_600</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.GozzaloApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GozzaloApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.GozzaloApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PaymentMehodTheme">
+        <item name="colorPrimary">@color/vivid_blue_300</item>
+    </style>
+
+    <style name="ProfileTheme">
+        <item name="colorSecondary">@color/black</item>
+    </style>
+
+    <style name="ProductDetailTheme" parent="Theme.GozzaloApp">
+        <item name="colorPrimary">@color/light_blue_600</item>
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_500</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="AddCardTheme">
+        <item name="colorPrimary">@color/vivid_blue_300</item>
+        <item name="colorSecondary">@color/vivid_blue_300</item>
+    </style>
+
+    <style name="PaymentTheme">
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+
+    <style name="NewsTheme">
+        <item name="colorPrimary">@color/vivid_green_300</item>
+    </style>
+
+    <style name="ExploreTheme">
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+
+    <style name="ShoppingCartTheme">
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+
+    <style name="ThemeOverlay.GozzaloApp.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+
+</resources>
