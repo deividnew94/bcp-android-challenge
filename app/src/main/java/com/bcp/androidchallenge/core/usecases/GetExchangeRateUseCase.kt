@@ -1,9 +1,14 @@
-package com.bcp.androidchallenge.domain
+package com.bcp.androidchallenge.core.usecases
 
 import androidx.lifecycle.LiveData
 import com.bcp.androidchallenge.core.Resource
+import com.bcp.androidchallenge.core.ResultType
+import com.bcp.androidchallenge.core.model.ExchangesRateModel
+import com.bcp.androidchallenge.core.repository.ExchangeRateRepository
 import com.bcp.androidchallenge.data.local.LocalDataSource
-import com.bcp.androidchallenge.data.model.*
+import com.bcp.androidchallenge.data.model.ExchangeRate
+import com.bcp.androidchallenge.data.model.ExchangeRateEntity
+import com.bcp.androidchallenge.data.model.asExchangeRateEntity
 import com.bcp.androidchallenge.data.remote.NetworkDataSource
 import dagger.hilt.android.scopes.ActivityRetainedScoped
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -14,13 +19,11 @@ import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.collect
 import javax.inject.Inject
 
-/**
- * Created by David Hernandez on 10 August 2020
- */
-
 @ExperimentalCoroutinesApi
 @ActivityRetainedScoped
-class DefaultExchangeRateRepository @Inject constructor(
+class GetExchangeRateUseCase
+@Inject
+constructor(
     private val networkDataSource: NetworkDataSource,
     private val localDataSource: LocalDataSource
 ) : ExchangeRateRepository {

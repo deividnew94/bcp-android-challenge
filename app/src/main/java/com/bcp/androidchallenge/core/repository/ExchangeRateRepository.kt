@@ -1,7 +1,9 @@
-package com.bcp.androidchallenge.domain
+package com.bcp.androidchallenge.core.repository
 
 import androidx.lifecycle.LiveData
 import com.bcp.androidchallenge.core.Resource
+import com.bcp.androidchallenge.core.ResultType
+import com.bcp.androidchallenge.core.model.ExchangesRateModel
 import com.bcp.androidchallenge.data.model.ExchangeRate
 import com.bcp.androidchallenge.data.model.ExchangeRateEntity
 import kotlinx.coroutines.flow.Flow

@@ -4,6 +4,9 @@ import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.bcp.androidchallenge.core.ResultType
+import com.bcp.androidchallenge.core.model.ExchangeRateModel
+import com.bcp.androidchallenge.core.model.ExchangesRateModel
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 

@@ -3,6 +3,8 @@ package com.bcp.androidchallenge.data.local
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.map
 import com.bcp.androidchallenge.core.Resource
+import com.bcp.androidchallenge.core.ResultType
+import com.bcp.androidchallenge.core.model.ExchangesRateModel
 import com.bcp.androidchallenge.data.model.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import javax.inject.Inject
