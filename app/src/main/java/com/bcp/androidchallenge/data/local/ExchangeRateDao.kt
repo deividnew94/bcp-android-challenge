@@ -2,6 +2,8 @@ package com.bcp.androidchallenge.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.bcp.androidchallenge.core.ResultType
+import com.bcp.androidchallenge.core.model.ExchangesRateModel
 import com.bcp.androidchallenge.data.model.ExchangeRateEntity
 
 /**
